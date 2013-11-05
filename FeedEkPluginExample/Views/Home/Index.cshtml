@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "FeedEk jQuery RSS/ATOM Feed Plugin Examples";
+}
+
+<h2>FeedEk jQuery RSS/ATOM Feed Plugin Example</h2>
+
+<div id="divRss">
+</div>
+<link href="~/Scripts/FeedEk/css/FeedEk.css" rel="stylesheet" />
+<script type="text/javascript">
+    $(function () {
+        $('#divRss').FeedEk({
+            FeedUrl: 'http://www.asp.net/rss/spotlight',
+            MaxCount: 5,
+            ShowDesc: true,
+            ShowPubDate: true,
+            DescCharacterLimit: 150,
+            TitleLinkTarget: '_blank'
+        });
+    });
+</script>
